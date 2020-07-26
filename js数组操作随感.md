@@ -8,9 +8,16 @@ console.log(zoo) // ['cat','dog','pig','bird']
 console.log(copies) // ['cat','dog','pig']
 
 // 复制数组copies不会因为zoo的改变而改变
+// Array.slice 方法会返回一个全新的数组
 ```
 
+关于数组的操作
 
+```js
+
+
+//Array.splice 方法会改变原始数组
+```
 
 关于数组的清空
 
