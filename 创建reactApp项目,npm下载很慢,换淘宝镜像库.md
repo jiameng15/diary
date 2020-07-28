@@ -21,6 +21,6 @@ npx create-react-app my-app
 // 也可以使用 npm init react-app my-app         --需要 npm 6+
 
 cd my-app 
-npm start // 启动项目
+yarn start // 启动项目
 ```
 
