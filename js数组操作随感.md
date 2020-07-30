@@ -14,10 +14,21 @@ console.log(copies) // ['cat','dog','pig']
 关于数组的操作
 
 ```js
-
-
 //Array.splice 方法会改变原始数组
+// 使用splice的前提是知道对应下标
+// 当我知道某个条件时,何获取数组下标后,才能使用splice删除该项
+// indexOf 配合 find
+let zoo = [{name:'cat',age:1},{name:'dog',age:2},{name:'pig',age:3}]
+let findItem = zoo.find(item=>item.name=='dog') // {name: "dog", age: 2}
+let findIndex = zoo.indexOf(findItem) // 1 此时我已获取需要的下标
+// 合并写法
+// 想从zoo中删除name为dog的动物
+zoo.splice(zoo.indexOf(zoo.find(item=>item.name=='dog')),1) // 返回新数组,数组中为删除项[{name: "dog", age: 2}]
+
+console.log(zoo) // 此时zoo变为[{name:'cat',age:1},{name:'pig',age:3}]
 ```
+
+
 
 关于数组的清空
 
